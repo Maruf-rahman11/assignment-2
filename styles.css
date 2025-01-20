@@ -178,6 +178,18 @@ body{
   
 }
 
+ /* arrows */
+
+ .arrow{
+    margin: 0  auto;
+    margin-bottom: 30px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
 
 @media screen and (max-width: 660px) {
     
@@ -194,6 +206,8 @@ body{
         margin-top: 0;
         
     }
+
+   
 
     .nav-2,.nav-school{
         display: none;
