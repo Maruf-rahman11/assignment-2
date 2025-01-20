@@ -28,6 +28,9 @@ body{
 .skybule-text{
     color: #01ACFD;
 }
+.purple-text{
+    color: rgba(135, 0, 255, 1);
+}
 /* nav bar styles */
 
 .nav-bar{
@@ -116,6 +119,41 @@ body{
     font-size: 1rem;
     color: white;
 }
+
+/* section one  */
+.section-1{
+    
+    width: 80%;
+    margin: 60px  auto;
+}
+.section1-container{
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.section1-header{
+    text-align: center;
+    font-weight: 800;
+    font-size: 2rem;
+    
+
+}
+.cards{
+    margin: 10px auto;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05);
+}
+.card-btn{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: white;
+    text-decoration: none;
+}
+
 
 @media screen and (max-width: 660px) {
     .nav-bar{
