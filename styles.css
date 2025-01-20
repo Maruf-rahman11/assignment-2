@@ -87,12 +87,14 @@ body{
     
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 100px;
 }
 .header-container{
     /* border: 1px solid black; */
     align-items: center;
     justify-content: space-between;
     gap: 30px;
+    x
 }
 .header-left{
     
@@ -121,12 +123,30 @@ body{
 }
 
 /* section one  */
-.section-1{
-    
-    width: 80%;
-    margin: 60px  auto;
+
+/* gradient colours */
+
+.blue-gradient{
+    background-image: linear-gradient(180.00deg, rgb(220, 237, 246) 10%, rgb(240, 236, 236) 40.034%)
 }
+.orange-gradient{
+    background-image: linear-gradient(180.00deg, rgb(250, 227, 206) 10%, rgb(240, 236, 236) 40.034%)
+}
+.purple-gradient{
+    background-image: linear-gradient(180.00deg, rgb(230, 203, 243) 10%, rgb(240, 236, 236) 40.034%)
+}
+.section1-bg{
+    
+    background-image: url(assets/bg.png);
+    width: 100%;
+}
+
 .section1-container{
+    margin: 60px  auto;
+    width: 80%;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     gap: 30px;
     justify-content: center;
     align-items: center;
@@ -142,23 +162,32 @@ body{
     margin: 10px auto;
     padding: 20px;
     text-align: center;
-    border: 1px solid black;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.08);
+    
 }
 .card-btn{
     margin-top: 20px;
     margin-bottom: 10px;
     border: none;
-    background-color: white;
+    background-color: transparent;
     text-decoration: none;
+}
+.card-btn1{
+    height: 127px;
+  
 }
 
 
 @media screen and (max-width: 660px) {
+    
+    .header,.section-1{
+        width: 90%;
+    }
+    
+    
     .nav-bar{
         padding:20px 10px;
-        
         border: 1px solid #FEA301;
         width: calc(100% - 20px);
         justify-content: space-between;
@@ -180,6 +209,23 @@ body{
         height: auto;
     }    
     .header-left{
+        text-align: center;
+    }
+    .section-1{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .section1-container{
+        
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        
+    }
+    .header-title{
         text-align: center;
     }
 }
