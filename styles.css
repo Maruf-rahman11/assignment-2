@@ -1,0 +1,147 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* shared styles */
+body{
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.quicksand-font{
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.display-flex{
+    display: flex;
+}
+.text-decoration{
+    text-decoration: none;
+    
+}
+.orange-text{
+    color: #FEA301;
+}
+.skybule-text{
+    color: #01ACFD;
+}
+/* nav bar styles */
+
+.nav-bar{
+    /* border: 1px solid black; */
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-logo{
+    height: 50px;
+    margin: auto 0;
+    
+}
+.nav-school{
+    font-weight: 1000;
+    font-size: 1.25rem;
+    margin-left: 20px;
+}
+
+.nav-btn1{
+    margin-left: 20px;
+    color: #FEA301;
+    font-weight: 600;
+}
+.nav-btn2{
+    margin-left: 20px;
+    color: #01ACFD;
+    font-weight: 600;
+}
+.nav-btn3{
+    margin-left: 20px;
+    color: #05D4DF;
+    font-weight: 600;
+}
+.nav-btn4{
+    margin-left: 20px;
+    color: #5D58EF;
+    font-weight: 600;
+}
+.contact-btn{
+    background-color: #FEA301;
+    padding: 8px 40px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: white;
+}
+
+/* header container styles */
+
+.header{
+    
+    width: 80%;
+    margin: 0 auto;
+}
+.header-container{
+    /* border: 1px solid black; */
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.header-left{
+    
+   
+   
+}
+.header-right{
+    width: 40%;
+    height: auto;
+}
+
+.header-title{
+    font-size: 600;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+.header-btn{
+    margin-top: 10px;
+    border: none;
+    background-color: black;
+    padding: 10px 40px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: white;
+}
+
+@media screen and (max-width: 660px) {
+    .nav-bar{
+        padding:20px 10px;
+        
+        border: 1px solid #FEA301;
+        width: calc(100% - 20px);
+        justify-content: space-between;
+        margin-top: 0;
+        
+    }
+
+    .nav-2,.nav-school{
+        display: none;
+    }
+    
+    .header-container{
+        flex-direction: column-reverse;
+        margin-bottom: 20px;
+    }
+    .header-right{
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+    }    
+    .header-left{
+        text-align: center;
+    }
+}
