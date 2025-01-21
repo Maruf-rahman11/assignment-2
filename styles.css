@@ -382,6 +382,10 @@ body{
     padding-right: 0px;
     
 }
+.footer-icons{
+    display: flex;
+    gap: 10px;
+}
 
 @media screen and (max-width: 660px) {
     
@@ -429,6 +433,9 @@ body{
         /* border: 1px solid black; */
         font-size: 600;
         font-size: 2rem;
+    }
+    .arrow{
+        display: none;
     }
     .section-1{
         width: 95%;
