@@ -80,6 +80,10 @@ body{
     font-size: 1.25rem;
     color: white;
 }
+.menu-icon{
+    
+    display: none;
+}
 
 /* header container styles */
 
@@ -178,7 +182,7 @@ body{
     text-decoration: none;
 }
 .card-btn1{
-    height: 127px;
+   
   
 }
 
@@ -394,8 +398,11 @@ body{
         margin-top: 0;
         
     }
+    .menu-icon{
+        display: inline;
+    }
     
-    .nav-2,.nav-school{
+    .nav-2,.nav-school,.contact-btn{
         display: none;
     }
     .header-title{
@@ -444,7 +451,8 @@ body{
         flex-direction: column;
     }
     .section2-container-right{
-        width: 90%;
+        width: 100%;
+        
     }
     .section2-container-left{
         display: none;
@@ -457,4 +465,49 @@ body{
         width: 100%;
         
     }
+    .middle-btn-right{
     
+        text-decoration: none;
+        position: relative;
+        display: block;
+        bottom: 0;
+        left: 20%;
+        width: 60%;
+        margin-top: -10%;
+        transform: translate(-20%, 0%);
+        padding: 8px 20px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 0.67rem;
+        z-index: 5;
+    }
+}
+    
+    @media screen and (min-width:576px) and (max-width: 920px ) {
+
+        .middle-btn-right{
+    
+            text-decoration: none;
+            position: relative;
+            display: block;
+            bottom: 0;
+            left: 20%;
+            width: 50%;
+            margin-top: -20%;
+            transform: translate(-20%, 0%);
+            padding: 5px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.70rem;
+            z-index: 5;
+        }
+        .banner1-bottom{
+            padding-right: 20px;
+        }
+    }
